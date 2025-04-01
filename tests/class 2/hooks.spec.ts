@@ -39,18 +39,25 @@ test.describe("Login page", () => {
 
 
 test.describe("Invalid Login page", () =>{
+
+
+ 
   
 
-  test.afterEach(async ({ page }) => {
+  test.afterEach(async ({ page }, testInfo) => {
        
     const errorMessage = page.locator('[data-test="error"]');
         await expect(errorMessage).toBeVisible();
         await expect(errorMessage).toHaveText('Epic sadface: Username and password do not match any user in this service');
-        /*if (testInfo.title === "test with empty user and pass") {
+        
+
+        if (testInfo.title === "test with empty user and pass") {
           await expect(errorMessage).toHaveText('Epic sadface: Username is required');
         } else {
           await expect(errorMessage).toHaveText('Epic sadface: Username and password do not match any user in this service');
-        }*/
+        }
+
+
       //});
    
   });
