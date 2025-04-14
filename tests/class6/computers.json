@@ -1,0 +1,20 @@
+[
+    {
+      "name": "new1",
+      "introduced": "2023-01-10",
+      "discontinued": "2024-01-10",
+      "company": "1"
+    },
+    {
+      "name": "new2",
+      "introduced": "2022-05-15",
+      "discontinued": "2023-05-15",
+      "company": "3"
+    },
+    {
+      "name": "new3",
+      "introduced": "2020-10-01",
+      "discontinued": "2021-10-01",
+      "company": "4"
+    }
+  ]

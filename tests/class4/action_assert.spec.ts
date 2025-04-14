@@ -51,6 +51,7 @@ test('test', async ({ page }) => {
   //await expect(page.getByText('NCR')).toBeVisible();
   await page.getByText('Select City').click();
   await page.getByText('Delhi', { exact: true }).click();
+  await expect(page.getByText('Delhi')).toContainText ('Delhi')
   //await expect(page.getByText('Delhi', { exact: true }).first()).toBeVisible();
   //await expect(page.getByText('Delhi')).toBeVisible();
   await page.getByRole('button', { name: 'Submit' }).click();

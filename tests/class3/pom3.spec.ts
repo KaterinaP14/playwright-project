@@ -3,6 +3,9 @@ import { DemoQa } from 'C:/Users/kater/OneDrive/Desktop/playwright/tests/class3/
 import * as fs from 'fs';
 const users = JSON.parse(fs.readFileSync('C:/Users/kater/OneDrive/Desktop/playwright/tests/class3/locator_data3.json', 'utf-8'));
 
+function delay(ms: number) {
+  return new Promise( resolve => setTimeout(resolve, ms) );
+}
 
 users.forEach((user) => {
     test(`pom test ${user.firstName}`, async ({ page }) => {
@@ -10,6 +13,7 @@ users.forEach((user) => {
 
         await demoQA.goto();
         await demoQA.getByPlaceholder(user.firstName);
+        await delay(3000);
         //await DemoQa.getByPlaceholder(user.lastName);
        
     });

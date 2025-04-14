@@ -18,7 +18,7 @@ export class DemoQa {
       }
     
       async getByPlaceholder(firstName) {
-        await this.firstName.waitFor({ state: 'visible' });
+       // await this.firstName.waitFor({ state: 'visible' });
         await this.firstName.fill(firstName);
       }
 
