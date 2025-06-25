@@ -1,0 +1,24 @@
+NodeJS
+                    https://nodejs.org/
+                    npm –v        
+Visual Studio Code
+                    https://code.visualstudio.com/
+   Playwright
+                   npm init playwright@latest
+                   npx playwright codegen
+                   npx playwright test --ui
+                   npx playwright test 
+                  npx playwright show-report
+                  npm install -D @playwright/test@latest
+                  npx playwright install --with-deps
+                  npx playwright --version
+Git https://git-scm.com/
+Github https://github.com/
+                  `git init`,
+                  `git clone [url]`
+                  `git status`
+                  `git add .`,
+                  `git commit -m "initial commit"`,
+                  `git remote add origin [repository URL]`,
+                  `git push -u origin master`
+                   `git pull`
