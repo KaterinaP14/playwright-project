@@ -14,8 +14,6 @@ export class DressesPage {
       window.scrollBy(0, window.innerHeight);
     });
 
-
-
     await this.page.locator('.product-container').nth(2).hover();
     await this.page.getByRole('link', { name: 'More' }).click();
   }

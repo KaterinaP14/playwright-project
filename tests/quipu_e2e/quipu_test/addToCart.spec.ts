@@ -9,8 +9,10 @@ test('User can add a dress to the cart', async ({ page }) => {
   const homePage = new HomePage(page);
   const dressesPage = new DressesPage(page);
 
+  
 
   await loginPage.goto();
+  await homePage.selectTab('Dresses');
   await dressesPage.selectItem('Printed Summer Dress');
   await dressesPage.addToCart('Yellow');
   await dressesPage.assertProductAdded();
