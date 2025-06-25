@@ -27,7 +27,7 @@ export class CartPage {
     await this.top.click()
   }
 
-  async clickTops(){
+  async clickTanks(){
     await this.tanks.click()
 
 

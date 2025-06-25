@@ -42,7 +42,7 @@ addProductToCart.forEach((product) => {
       cartPage = new CartPage(page)
 
       await magentnto.navigateToMenTops();
-      await magentnto.clickTops();
+      await magentnto.clickTanks();
       await cartPage.addToCart();
       await page.waitForTimeout(5000)
       await cartPage.montanaSizeS.click();
