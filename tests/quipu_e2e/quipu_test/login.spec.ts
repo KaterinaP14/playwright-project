@@ -6,7 +6,6 @@ test('user can login', async ({ page }) => {
 
   await loginPage.goto();
   await loginPage.login('katerinapanovap@gmail.com', '123456');
-
   await loginPage.assertLoginSuccessful();
 });
 
